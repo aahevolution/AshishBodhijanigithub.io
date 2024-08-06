@@ -5,37 +5,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
     <style>
-        /* Your existing styles */
-
-        /* Job designation styling */
+        .job-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start (left side) */
+            margin-bottom: 20px; /* Space between job entries */
+        }
         .job-header {
             font-weight: bold;
-            color: #000000; /* Dark color for job designation */
+            color: #000000;
             margin-bottom: 10px; /* Space between header and details */
         }
-
-        /* Section headers styling */
-        section header h2 {
-            color: #000000; /* Dark color for section headers */
-            font-weight: bold; /* Bold text for section headers */
+        .job-details {
+            color: #000000; /* Ensure text is black */
+            padding-left: 0; /* Remove any extra indent */
+            list-style-type: none; /* Remove bullet points */
+            margin: 0; /* Remove margin */
         }
-
-        /* Specific styling for Projects section */
-        #Projects {
-            background-color: #333333; /* Dark background color */
-            color: #ffffff; /* White text color for readability */
+        .job-details li {
+            margin-bottom: 10px; /* Space between list items */
         }
-
-        /* Additional styling for dark background sections if needed */
         .dark-background {
             background-color: #333333; /* Dark background color */
-            color: #ffffff; /* White text color */
+            color: #ffffff; /* Light text color for contrast */
+            padding: 20px; /* Padding for content */
+            border-radius: 8px; /* Optional: rounded corners */
         }
-
-        .dark-background header h2 {
-            color: #ffffff; /* White text color for section headers in dark background */
+        .dark-background h2 {
+            color: #ffffff; /* Ensure header text is white */
+        }
+        .dark-background p {
+            color: #cccccc; /* Lighter text color for paragraphs */
+        }
+        .dark-background a {
+            color: #ffffff; /* Ensure links are white */
+        }
+        .dark-background a:hover {
+            color: #ffcc00; /* Optional: link hover color */
         }
     </style>
 </head>
@@ -59,7 +66,7 @@
                     <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
                     <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
                     <li><a href="#Professional-Experience" id="Professional-Experience-link"><span class="icon solid fa-th">Professional Experience</span></a></li>
-                    <li><a href="#Projects" id="Projects-link"><span class="icon solid fa-project-diagram">Projects</span></a></li>
+                    <li><a href="#Projects" id="Projects-link"><span class="icon solid fa-trophy">Projects</span></a></li>
                     <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
                 </ul>
             </nav>
@@ -98,9 +105,9 @@
         <section id="about" class="three">
             <div class="container">
                 <header>
-                    <h2>About Me</h2>
+                    <h2 style="color:#000000"><b>About Me</b></h2>
                 </header>
-                <p>I am a Computer Science graduate from Poornima Institute, Jaipur, with a strong foundation in technical and non-technical skills. I excel in communication, collaboration, and rapidly mastering new technologies to address complex challenges. My analytical abilities enable me to develop effective solutions and efficiently manage multiple tasks. Currently, I am interning as a Cloud DevOps Intern at Froogal.ai, where I am gaining hands-on experience with cloud technologies and DevOps practices. This role has deepened my understanding of cloud infrastructure and development workflows. I am now willing to transition into a full-time Cloud and DevOps Engineering role, and eager to leverage my analytics background and problem-solving skills in this field. I am committed to expanding my expertise and contributing to innovative projects while advancing my professional growth in a dynamic cloud environment.</p>
+                <p style="color:#000000">I am a Computer Science graduate from Poornima Institute, Jaipur, with a strong foundation in technical and non-technical skills. I excel in communication, collaboration, and rapidly mastering new technologies to address complex challenges. My analytical abilities enable me to develop effective solutions and efficiently manage multiple tasks. Currently, I am interning as a Cloud DevOps Intern at Froogal.ai, where I am gaining hands-on experience with cloud technologies and DevOps practices. This role has deepened my understanding of cloud infrastructure and development workflows. I am now willing to transition into a full-time Cloud and DevOps Engineering role, and eager to leverage my analytics background and problem-solving skills in this field. I am committed to expanding my expertise and contributing to innovative projects while advancing my professional growth in a dynamic cloud environment.</p>
                 <div class="col-twelve">
                     <a href="https://github.com/aahevolution/AshishBodhijanigithub.io/blob/main/Ashish%20Bodhijani%20Resume.pdf" title="Download Resume" class="button button-primary">Download Resume</a>
                 </div>
