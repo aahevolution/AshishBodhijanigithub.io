@@ -27,9 +27,17 @@
         }
 
         .job-header {
+            display: flex;
+            justify-content: space-between; /* Distribute space between the job title and date */
+            width: 100%;
             font-weight: bold;
             color: #333; /* Dark color for job designation */
             margin-bottom: 10px; /* Space below the job header */
+        }
+
+        .job-date {
+            color: #777; /* Light color for dates to differentiate from job title */
+            font-weight: normal;
         }
 
         .job-details ul {
@@ -120,7 +128,10 @@
                 <div class="job-container">
                     <div class="job-item">
                         <div class="job-content">
-                            <div class="job-header">Cloud DevOps Intern | Froogal.ai (Dec 2023 – July 2024)</div>
+                            <div class="job-header">
+                                <span>Cloud DevOps Intern | Froogal.ai</span>
+                                <span class="job-date">(Dec 2023 – July 2024)</span>
+                            </div>
                             <div class="job-details">
                                 <ul>
                                     <li>Supported cloud deployment and management tasks, gaining hands-on experience in optimization, DevOps practices, and security.</li>
@@ -131,7 +142,10 @@
                     </div>
                     <div class="job-item">
                         <div class="job-content">
-                            <div class="job-header">Service Analyst | Uber (Mar 2022 – Nov 2023)</div>
+                            <div class="job-header">
+                                <span>Service Analyst | Uber</span>
+                                <span class="job-date">(Mar 2022 – Nov 2023)</span>
+                            </div>
                             <div class="job-details">
                                 <ul>
                                     <li>Managed performance and optimization for Uber for Business gift card services by analyzing data, enhancing user experience, and streamlining processes.</li>
@@ -143,7 +157,10 @@
                     </div>
                     <div class="job-item">
                         <div class="job-content">
-                            <div class="job-header">Data Analyst | KOL & Peers Analytics (June 2021 – Feb 2022)</div>
+                            <div class="job-header">
+                                <span>Data Analyst | KOL & Peers Analytics</span>
+                                <span class="job-date">(June 2021 – Feb 2022)</span>
+                            </div>
                             <div class="job-details">
                                 <ul>
                                     <li>Compiled and meticulously analyzed comprehensive datasets about medical professionals from diverse platforms, uncovering valuable insights into the healthcare landscape.</li>
