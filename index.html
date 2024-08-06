@@ -1,3 +1,12 @@
+To achieve the layout you want with the job designation on the left, company name in the middle, and dates on the right, all in dark black bold color, you can adjust your CSS. Specifically, you'll need to:
+
+1. Set the `job-header` to `display: flex` for proper alignment.
+2. Adjust `justify-content` to `space-between` to ensure that items are distributed evenly.
+3. Apply the appropriate styles for bold and color settings.
+
+Here’s how you can modify your CSS to achieve this:
+
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
     <style>
         /* Your existing styles */
-        
+
         .job-container {
             display: flex;
             flex-direction: column;
@@ -28,22 +37,31 @@
 
         .job-header {
             display: flex;
-            justify-content: space-between; /* Distribute space between the job title and date */
+            justify-content: space-between; /* Distribute space between job designation, company name, and dates */
             align-items: center; /* Vertically center items */
             width: 100%;
             font-weight: bold;
-            color: #333; /* Dark color for job designation */
+            color: #000; /* Dark black color for text */
             margin-bottom: 10px; /* Space below the job header */
         }
 
-        .job-company {
+        .job-designation, .job-company, .job-date {
+            color: #000; /* Dark black color */
+            font-weight: bold; /* Make text bold */
+        }
+
+        .job-designation {
             flex: 1;
+            text-align: left; /* Align job designation to the left */
+        }
+
+        .job-company {
+            flex: 2;
             text-align: center; /* Center the company name */
         }
 
         .job-date {
-            color: #000; /* Dark black color for dates */
-            font-weight: bold; /* Make the dates bold */
+            flex: 1;
             text-align: right; /* Align the dates to the right */
         }
 
@@ -136,7 +154,8 @@
                     <div class="job-item">
                         <div class="job-content">
                             <div class="job-header">
-                                <span class="job-company">Cloud DevOps Intern | Froogal.ai</span>
+                                <span class="job-designation">Cloud DevOps Intern</span>
+                                <span class="job-company">Froogal.ai</span>
                                 <span class="job-date">Dec 2023 – July 2024</span>
                             </div>
                             <div class="job-details">
@@ -150,7 +169,8 @@
                     <div class="job-item">
                         <div class="job-content">
                             <div class="job-header">
-                                <span class="job-company">Service Analyst | Uber</span>
+                                <span class="job-designation">Service Analyst</span>
+                                <span class="job-company">Uber</span>
                                 <span class="job-date">Mar 2022 – Nov 2023</span>
                             </div>
                             <div class="job-details">
@@ -165,7 +185,8 @@
                     <div class="job-item">
                         <div class="job-content">
                             <div class="job-header">
-                                <span class="job-company">Data Analyst | KOL & Peers Analytics</span>
+                                <span class="job-designation">Data Analyst</span>
+                                <span class="job-company">KOL & Peers Analytics</span>
                                 <span class="job-date">June 2021 – Feb 2022</span>
                             </div>
                             <div class="job-details">
