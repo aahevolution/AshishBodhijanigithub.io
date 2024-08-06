@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         .job-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             margin-bottom: 20px; /* Space between job entries */
         }
         .job-header {
@@ -22,17 +25,6 @@
         }
         .job-details li {
             margin-bottom: 10px; /* Space between list items */
-        }
-        .job-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items to the left */
-        }
-        .job-item {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -110,15 +102,13 @@
                 <header>
                     <h2>Professional Experience</h2>
                 </header>
-                <div class="job-wrapper">
+                <div class="job-container">
                     <div class="job-item">
                         <div class="job-header">Cloud DevOps Intern | Froogal.ai (Dec 2023 – July 2024)</div>
                         <div class="job-details">
                             <ul>
-                                <li>Supported cloud deployment and management tasks, gaining hands-on experience in optimization, 
-                                    DevOps practices, and security.</li>
-                                <li>Assisted in automating deployment pipelines, improving CI/CD processes, and managing cloud 
-                                    resources efficiently.</li>
+                                <li>Supported cloud deployment and management tasks, gaining hands-on experience in optimization, DevOps practices, and security.</li>
+                                <li>Assisted in automating deployment pipelines, improving CI/CD processes, and managing cloud resources efficiently.</li>
                             </ul>
                         </div>
                     </div>
@@ -171,4 +161,6 @@
                         </article>
                     </div>
                     <div class="col-4 col-12-mobile">
-                       
+                        <article class="item">
+                            <a href="#" class="image fit"><img src="images/Appreciation.png" alt="" /></a>
+                            <
