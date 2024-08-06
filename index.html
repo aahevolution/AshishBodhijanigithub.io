@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         .job-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
+            margin-bottom: 20px; /* Space between job entries */
+        }
+        .job-header {
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 10px; /* Space between header and details */
+        }
+        .job-details {
+            color: #000000; /* Ensure text is black */
+            padding-left: 20px; /* Indent details for readability */
+            list-style-type: none; /* Remove bullet points */
+            margin: 0; /* Remove margin */
+        }
+        .job-details li {
+            margin-bottom: 10px; /* Space between list items */
         }
         .job-designation {
             font-weight: bold;
             color: #000000;
-            text-align: left;
-            margin-right: 20px;
-        }
-        .job-details {
-            text-align: left;
-            margin-left: 20px;
-            list-style-type: none; /* Remove bullet points */
-            padding: 0; /* Remove padding */
-        }
-        .job-details li {
-            margin-bottom: 10px; /* Add spacing between items */
         }
     </style>
 </head>
@@ -103,7 +104,9 @@
                     <h2>Professional Experience</h2>
                 </header>
                 <div class="job-container">
-                    <div class="job-designation">Cloud DevOps Intern | Froogal.ai (Dec 2023 – July 2024)</div>
+                    <div class="job-header">
+                        <span class="job-designation">Cloud DevOps Intern | Froogal.ai (Dec 2023 – July 2024)</span>
+                    </div>
                     <div class="job-details">
                         <ul>
                             <li>Supported cloud deployment and management tasks, gaining hands-on experience in optimization, DevOps practices, and security.</li>
@@ -112,7 +115,9 @@
                     </div>
                 </div>
                 <div class="job-container">
-                    <div class="job-designation">Service Analyst | Uber (Mar 2022 – Nov 2023)</div>
+                    <div class="job-header">
+                        <span class="job-designation">Service Analyst | Uber (Mar 2022 – Nov 2023)</span>
+                    </div>
                     <div class="job-details">
                         <ul>
                             <li>Managed performance and optimization for Uber for Business gift card services by analyzing data, enhancing user experience, and streamlining processes.</li>
@@ -122,7 +127,9 @@
                     </div>
                 </div>
                 <div class="job-container">
-                    <div class="job-designation">Data Analyst | KOL & Peers Analytics (June 2021 – Feb 2022)</div>
+                    <div class="job-header">
+                        <span class="job-designation">Data Analyst | KOL & Peers Analytics (June 2021 – Feb 2022)</span>
+                    </div>
                     <div class="job-details">
                         <ul>
                             <li>Compiled and meticulously analyzed comprehensive datasets about medical professionals from diverse platforms, uncovering valuable insights into the healthcare landscape.</li>
@@ -159,21 +166,4 @@
                         </article>
                     </div>
                     <div class="col-4 col-12-mobile">
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="images/Appreciation.png" alt="" /></a>
-                            <header>
-                                <h3>Golden Ticket 2</h3>
-                            </header>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="four">
-            <div class="container">
-                <header>
-                    <h2>Contact</h2>
-                </header>
-                <p style="color:#000000">I'd love to hear from you. I'm currently available
+                        <
