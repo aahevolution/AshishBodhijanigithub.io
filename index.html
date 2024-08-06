@@ -29,15 +29,22 @@
         .job-header {
             display: flex;
             justify-content: space-between; /* Distribute space between the job title and date */
+            align-items: center; /* Vertically center items */
             width: 100%;
             font-weight: bold;
             color: #333; /* Dark color for job designation */
             margin-bottom: 10px; /* Space below the job header */
         }
 
+        .job-company {
+            flex: 1;
+            text-align: center; /* Center the company name */
+        }
+
         .job-date {
-            color: #777; /* Light color for dates to differentiate from job title */
-            font-weight: normal;
+            color: #000; /* Dark black color for dates */
+            font-weight: bold; /* Make the dates bold */
+            text-align: right; /* Align the dates to the right */
         }
 
         .job-details ul {
@@ -129,8 +136,8 @@
                     <div class="job-item">
                         <div class="job-content">
                             <div class="job-header">
-                                <span>Cloud DevOps Intern | Froogal.ai</span>
-                                <span class="job-date">(Dec 2023 – July 2024)</span>
+                                <span class="job-company">Cloud DevOps Intern | Froogal.ai</span>
+                                <span class="job-date">Dec 2023 – July 2024</span>
                             </div>
                             <div class="job-details">
                                 <ul>
@@ -143,8 +150,8 @@
                     <div class="job-item">
                         <div class="job-content">
                             <div class="job-header">
-                                <span>Service Analyst | Uber</span>
-                                <span class="job-date">(Mar 2022 – Nov 2023)</span>
+                                <span class="job-company">Service Analyst | Uber</span>
+                                <span class="job-date">Mar 2022 – Nov 2023</span>
                             </div>
                             <div class="job-details">
                                 <ul>
@@ -158,8 +165,8 @@
                     <div class="job-item">
                         <div class="job-content">
                             <div class="job-header">
-                                <span>Data Analyst | KOL & Peers Analytics</span>
-                                <span class="job-date">(June 2021 – Feb 2022)</span>
+                                <span class="job-company">Data Analyst | KOL & Peers Analytics</span>
+                                <span class="job-date">June 2021 – Feb 2022</span>
                             </div>
                             <div class="job-details">
                                 <ul>
