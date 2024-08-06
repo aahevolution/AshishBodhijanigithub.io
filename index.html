@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
+        .job-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
         .job-designation {
-            text-align: right;
             font-weight: bold;
+            color: #000000;
+            text-align: left;
+            margin-right: 20px;
         }
         .job-details {
-            text-align: right;
-            margin-right: 20px;
+            text-align: left;
+            margin-left: 20px;
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+        .job-details li {
+            margin-bottom: 10px; /* Add spacing between items */
         }
     </style>
 </head>
@@ -90,26 +102,34 @@
                 <header>
                     <h2>Professional Experience</h2>
                 </header>
-                <div class="job-details">
+                <div class="job-container">
                     <div class="job-designation">Cloud DevOps Intern | Froogal.ai (Dec 2023 – July 2024)</div>
-                    <ul>
-                        <li>Supported cloud deployment and management tasks, gaining hands-on experience in optimization, DevOps practices, and security.</li>
-                        <li>Assisted in automating deployment pipelines, improving CI/CD processes, and managing cloud resources efficiently.</li>
-                    </ul>
-                    <br>
+                    <div class="job-details">
+                        <ul>
+                            <li>Supported cloud deployment and management tasks, gaining hands-on experience in optimization, DevOps practices, and security.</li>
+                            <li>Assisted in automating deployment pipelines, improving CI/CD processes, and managing cloud resources efficiently.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
                     <div class="job-designation">Service Analyst | Uber (Mar 2022 – Nov 2023)</div>
-                    <ul>
-                        <li>Managed performance and optimization for Uber for Business gift card services by analyzing data, enhancing user experience, and streamlining processes.</li>
-                        <li>Developed dashboards and reports to monitor key metrics, driving data-driven decisions and improving service delivery.</li>
-                        <li>Worked closely with the engineering team to troubleshoot and resolve issues, ensuring system reliability and performance.</li>
-                    </ul>
-                    <br>
+                    <div class="job-details">
+                        <ul>
+                            <li>Managed performance and optimization for Uber for Business gift card services by analyzing data, enhancing user experience, and streamlining processes.</li>
+                            <li>Developed dashboards and reports to monitor key metrics, driving data-driven decisions and improving service delivery.</li>
+                            <li>Worked closely with the engineering team to troubleshoot and resolve issues, ensuring system reliability and performance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
                     <div class="job-designation">Data Analyst | KOL & Peers Analytics (June 2021 – Feb 2022)</div>
-                    <ul>
-                        <li>Compiled and meticulously analyzed comprehensive datasets about medical professionals from diverse platforms, uncovering valuable insights into the healthcare landscape.</li>
-                        <li>Created detailed visualizations and reports to present findings to stakeholders, supporting strategic planning and decision-making.</li>
-                        <li>Utilized statistical analysis to identify trends and patterns, driving actionable recommendations and improving data accuracy.</li>
-                    </ul>
+                    <div class="job-details">
+                        <ul>
+                            <li>Compiled and meticulously analyzed comprehensive datasets about medical professionals from diverse platforms, uncovering valuable insights into the healthcare landscape.</li>
+                            <li>Created detailed visualizations and reports to present findings to stakeholders, supporting strategic planning and decision-making.</li>
+                            <li>Utilized statistical analysis to identify trends and patterns, driving actionable recommendations and improving data accuracy.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -156,15 +176,4 @@
                 <header>
                     <h2>Contact</h2>
                 </header>
-                <p style="color:#000000">I'd love to hear from you. I'm currently available for work. If you have a project you'd like to discuss, please email me via the form below.</p>
-                <form method="post" action="#">
-                    <div class="row">
-                        <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-                        <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-                        <div class="col-12">
-                            <textarea name="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <input type="submit" value="Send Message" />
-                        </div>
-                    </div>
+                <p style="color:#000000">I'd love to hear from you. I'm currently available
