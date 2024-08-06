@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
     <style>
-        /* Your existing styles */
+        /* Existing styles */
 
         /* Job designation styling */
         .job-header {
@@ -16,21 +16,40 @@
             margin-bottom: 10px; /* Space between header and details */
         }
 
+        /* Job details styling */
+        .job-details {
+            color: #000000; /* Black color for job descriptions */
+            padding-left: 0; /* Remove any extra indent */
+            list-style-type: none; /* Remove bullet points */
+            margin: 0; /* Remove margin */
+        }
+
+        .job-details li {
+            margin-bottom: 10px; /* Space between list items */
+        }
+
         /* Section headers styling */
         section header h2 {
             color: #000000; /* Dark color for section headers */
             font-weight: bold; /* Bold text for section headers */
         }
 
-        /* Specific styling for Projects section */
+        /* Projects section styling */
         #Projects {
-            background-color: #333333; /* Dark background color */
+            background-color: #222222; /* Dark background color */
             color: #ffffff; /* White text color for readability */
+        }
+
+        /* Projects section article styling */
+        #Projects .item {
+            border: 1px solid #444444; /* Dark border for items */
+            margin-bottom: 20px; /* Space between items */
+            padding: 10px; /* Padding for items */
         }
 
         /* Additional styling for dark background sections if needed */
         .dark-background {
-            background-color: #333333; /* Dark background color */
+            background-color: #222222; /* Dark background color */
             color: #ffffff; /* White text color */
         }
 
@@ -206,7 +225,7 @@
                 <header>
                     <h2>Contact</h2>
                 </header>
-                <p style="color:#000000">I'd Love To Hear From You.
+                <p>I'd Love To Hear From You.
                     I'm currently available for work. If you have a project you'd like to discuss, then please email me via the form below.</p>
                 <form method="post" action="#">
                     <div class="row">
